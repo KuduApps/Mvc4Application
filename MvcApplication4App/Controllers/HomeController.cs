@@ -12,6 +12,10 @@ namespace MvcApplication4App.Controllers
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
+            System.Diagnostics.Trace.TraceError("Error statement");
+            System.Diagnostics.Trace.TraceWarning("Warning statement");
+            System.Diagnostics.Trace.TraceInformation("Info statement");
+
             return View();
         }
 
